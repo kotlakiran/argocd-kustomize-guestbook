@@ -1,0 +1,15 @@
+kind: Ingress
+apiVersion: networking.k8s.io/v1beta1
+metadata:
+  annotations:
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443},{"HTTPS": 8490},{"HTTPS": 80}]'
+    external-dns.alpha.kubernetes.io/hostname: guestbook-ui.us-west-1.elb.amazonaws.com
+  name: ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - backend:
+          serviceName: guestbook-ui
+          servicePort: 80
+        path: /*
