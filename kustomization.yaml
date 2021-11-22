@@ -5,7 +5,7 @@ resources:
 - guestbook-ui-svc.yaml
 
 patchesStrategicMerge:
-# - Ingress-patch.yaml
+ - Ingress-patch.yaml
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
