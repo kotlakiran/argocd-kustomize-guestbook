@@ -9,5 +9,5 @@ resources:
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-- name: https://github.com/kotlakiran/argocd-kustomize-guestbook.git
+- name: gcr.io/heptio-images/ks-guestbook-demo:0.1
   newTag: latest
