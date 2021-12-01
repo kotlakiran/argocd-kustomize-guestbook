@@ -20,8 +20,8 @@ spec:
         name: guestbook-ui
         resources:
           limits:
-            cpu: 250m
+            cpu: "250m"
           requests:
-            cpu: 250m          
+            cpu: "250m"          
         ports:
         - containerPort: 8089   
