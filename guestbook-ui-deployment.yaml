@@ -15,13 +15,13 @@ spec:
     spec:
       readinessGates:
       - conditionType: target-health.alb.ingress.k8s.aws/load-balancer-any-tg-ready    
-      containers:
+      containers:     
+      - image: public.ecr.aws/p2a6g7m7/website:latest
+        name: guestbook-ui
         resources:
           limits:
             cpu: 250m
           requests:
-            cpu: 250m       
-      - image: public.ecr.aws/p2a6g7m7/website:latest
-        name: guestbook-ui
+            cpu: 250m          
         ports:
         - containerPort: 8089   
