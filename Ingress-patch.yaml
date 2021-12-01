@@ -2,9 +2,9 @@ kind: Ingress
 apiVersion: networking.k8s.io/v1beta1
 metadata:
   annotations:
-    kubernetes.io/ingress.class: aws-alb
+    kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
-   #external-dns.alpha.kubernetes.io/hostname: guestbook-ui.ocpp-test.com
+    external-dns.alpha.kubernetes.io/hostname: guestbook.productcatalog-internal.a.nike.com
   name: ingress
 spec:
   rules:
