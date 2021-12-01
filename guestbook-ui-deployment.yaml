@@ -20,8 +20,6 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 8089
-        readinessProbe:
-          initialDelaySeconds: 300
         resources:
           limits:
             cpu: 250m
