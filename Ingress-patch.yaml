@@ -4,7 +4,6 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: aws-alb
     alb.ingress.kubernetes.io/scheme: internet-facing
-    alb.ingress.kubernetes.io/healthcheck-path: '/'
    #external-dns.alpha.kubernetes.io/hostname: guestbook-ui.ocpp-test.com
   name: ingress
 spec:
