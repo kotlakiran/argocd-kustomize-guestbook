@@ -2,8 +2,7 @@ kind: Ingress
 apiVersion: networking.k8s.io/v1beta1
 metadata:
   annotations:
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTPS": 443},{"HTTPS": 8490},{"HTTPS": 80}]'
-    kubernetes.io/ingress.class: aws-alb
+    kubernetes.io/ingress.class: alb
     alb.ingress.kubernetes.io/scheme: internet-facing
    #external-dns.alpha.kubernetes.io/hostname: guestbook-ui.ocpp-test.com
   name: ingress
