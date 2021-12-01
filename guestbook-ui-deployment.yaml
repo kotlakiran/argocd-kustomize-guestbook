@@ -12,9 +12,7 @@ spec:
     metadata:
       labels:
         app: guestbook-ui
-    spec:
-      readinessGates:
-      - conditionType: target-health.alb.ingress.k8s.aws/load-balancer-any-tg-ready    
+    spec: 
       containers:     
       - image: public.ecr.aws/p2a6g7m7/website:latest
         name: guestbook-ui
