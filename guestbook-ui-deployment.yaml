@@ -13,7 +13,7 @@ spec:
         app: guestbook-ui
     spec: 
       containers:     
-      - image: public.ecr.aws/p2a6g7m7/kiran:latest
+      - image: public.ecr.aws/p2a6g7m7/website:latest
         name: guestbook-ui
         resources:
           limits:
